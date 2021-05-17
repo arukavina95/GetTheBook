@@ -100,7 +100,7 @@ namespace GetTheBook
 
                                 bookBL = bookService.ReturnSelectedBook(isbn);
                                 Console.WriteLine(bookService.Msg);
-                                Console.WriteLine("You returned book " + bookBL.Title);
+                                
                                 break;
                             case 5:
                                 Console.WriteLine("LIST OF BORROWED BOOKS:\n ===================== \n ");
@@ -129,7 +129,7 @@ namespace GetTheBook
                                 Environment.Exit(0);
                                 break;
                             default:
-                                Console.WriteLine("Please enter valid number(1-5) or 9 for exit");
+                                Console.WriteLine("Please enter valid number(1-6) or 9 for exit");
                                 break;
                         }
 
