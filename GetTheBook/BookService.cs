@@ -65,7 +65,10 @@ namespace GetTheBook
             {
                 var books = _context.Books;
                 Book book = books.SingleOrDefault(x => x.Isbn == isbn);
-
+                if (book == null)
+                {
+                    return null;
+                }
                 return DalToBL(book);
             }
         }
